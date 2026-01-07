@@ -1,3 +1,4 @@
+import joblib
 import pandas as pd
 from sklearn.compose import ColumnTransformer
 from sklearn.preprocessing import OneHotEncoder, StandardScaler
@@ -18,5 +19,7 @@ def preprocess_data(df: pd.DataFrame, target_cols: list[str]):
           ('cat', categorical_pipline, cat_cols)  
       ]
   )
+
+  joblib.dump(preprocessor, 'models/preprocessor.joblib')
 
   return preprocessor, X;
