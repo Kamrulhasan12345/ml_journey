@@ -1,3 +1,6 @@
 [submodule "02_projects/bayyinah-ai"]
 	path = 02_projects/bayyinah-ai
 	url = git@github.com:Kamrulhasan12345/bayyinah-ai.git
+[submodule "01_skills/numpy-100"]
+	path = 01_skills/numpy-100
+	url = https://github.com/rougier/numpy-100
